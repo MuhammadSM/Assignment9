@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment IX</title>
+</head>
+<body>
+	<h1>Muhammad S. Malik</h1>
+	<h2>Assignment IX</h2>
+	<h3>Loops</h3>
+	<h4>Rate The Following Halloween Movies from 1 Pumpkin (Frighteningly Horrendous) to 5 Pumpkins (Terrifyingly Perfect):</h4>
+	<form>
+		<label>Halloween (1978)
+			<br>
+		 		<img src="images/hwmovie1.jpg" alt="Halloween Movie Poster. A carved out lantern with a knife accompanied by text that reads: 'The Night HE Came Home.' ">
+		 </label>
+		 <br>
+		 <select class="movieRatings">
+		 	<option class="hwOne"></option>
+		 	<option class="hwOne"></option>
+		 	<option class="hwOne"></option>
+		 	<option class="hwOne"></option>
+		 	<option class="hwOne"></option>
+		 </select>
+	<br>
+	<br>
+	<label>Halloween IV (1989)
+			<br>
+		 		<img src="images/hwmovie4.jpg" alt="Halloween Four Movie Poster. A masked-man (Michael Myers) with a dark house in the background. The subtitle reads: 'The Return of Michael Myers.' The accompanying text reads: '' " width="220" height="326">
+		 </label>
+		 <br>
+		 <select class="movieRatings">
+		 	<option class="hwFour"></option>
+		 	<option class="hwFour"></option>
+		 	<option class="hwFour"></option>
+		 	<option class="hwFour"></option>
+		 	<option class="hwFour"></option>
+		 </select>
+		 <br>
+		 <br>
+		 <label>Halloweentown (1998)
+			<br>
+		 		<img src="images/hwtown1.jpg" alt="Halloweentown Movie Poster. Three children looking upwards to their grandmother on a flying broom. A City Hall building is below them. A jack-o-lantern is at the bottom of the poster." width="220" height="326">
+		 </label>
+		 <br>
+		 <br>
+		 <select class="movieRatings">
+		 	<option class="hwTown"></option>
+		 	<option class="hwTown"></option>
+		 	<option class="hwTown"></option>
+		 	<option class="hwTown"></option>
+		 	<option class="hwTown"></option>
+		 </select>
+
+	</form>
+
+	<script>
+			var optionsMovOne = document.getElementsByClassName("hwOne");
+			var i;
+			for(i=0; i<optionsMovOne.length; i++){
+				optionsMovOne[i].innerHTML = "This movie deserves " + [i+1] + " pumpkin(s)."
+			};
+			var optionsMovTwo = document.getElementsByClassName("hwFour");
+			var i;
+			for(i=0; i<optionsMovTwo.length; i++){
+				optionsMovTwo[i].innerHTML = "This movie deserves " + [i+1] + " pumpkin(s)."
+			};
+			var optionsMovThree = document.getElementsByClassName("hwTown");
+			var i;
+			for(i=0; i<optionsMovThree.length; i++){
+				optionsMovThree[i].innerHTML = "This movie deserves " + [i+1] + " pumpkin(s)."
+			};
+
+
+	</script>
+
+
+</body>
+</html>
